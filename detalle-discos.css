@@ -1,0 +1,380 @@
+
+.detail-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* =============================================================
+   VARIABLES
+============================================================= */
+
+:root {
+    --bg: #020d0a;
+    --bg-secondary: #051b15;
+
+    --panel: #071d17;
+    --panel-secondary: #0b2820;
+    --panel-light: #0d3027;
+
+    --text: #f0f5f3;
+    --muted: #82938e;
+
+    --green: #16d98c;
+    --green-dark: #087e58;
+
+    --red: #ff615d;
+    --yellow: #ffc928;
+    --cyan: #16d9e8;
+
+    --border: rgba(255, 255, 255, .08);
+}
+
+/* =============================================================
+   BASE
+============================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #0b3026 0%,
+            #051b15 40%,
+            #020d0a 100%
+        );
+}
+
+body {
+    min-height: 100vh;
+    padding: 32px 25px 60px;
+}
+
+/* =============================================================
+   CABECERA
+============================================================= */
+
+.detail-page-header {
+    width: min(1500px, 100%);
+    margin: 0 auto 28px;
+    padding-bottom: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.detail-page-heading h1 {
+    margin: 0 0 9px;
+
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+}
+
+.detail-page-heading p {
+    margin: 0;
+
+    color: #80938d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#closeButton {
+    flex-shrink: 0;
+
+    padding: 9px 15px;
+    border: 1px solid rgba(255, 255, 255, .10);
+    border-radius: 9px;
+
+    background: rgba(20, 55, 46, .72);
+    color: #c6d2ce;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        color .2s ease;
+}
+
+#closeButton:hover {
+    background: rgba(19, 76, 59, .8);
+    border-color: rgba(22, 217, 140, .3);
+    color: var(--green);
+}
+
+/* =============================================================
+   TABLA Y BUSCADOR
+============================================================= */
+
+.disks-section {
+    width: min(1500px, 100%);
+    margin: 0 auto;
+
+    padding: 22px;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(10, 40, 32, .98),
+            rgba(5, 25, 20, .98)
+        );
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .15);
+}
+
+.table-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+}
+
+#generalSearch {
+    width: 320px;
+    max-width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    background: rgba(2, 13, 10, .65);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 12px;
+
+    outline: none;
+}
+
+#generalSearch::placeholder {
+    color: #708780;
+}
+
+#generalSearch:focus,
+.filters-row input:focus {
+    border-color: rgba(22, 217, 140, .65);
+    box-shadow: 0 0 0 2px rgba(22, 217, 140, .08);
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+/* =============================================================
+   TABLA
+============================================================= */
+
+#disksTable {
+    width: 100%;
+    min-width: 1150px;
+
+    border-collapse: collapse;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#disksTable th,
+#disksTable td {
+    padding: 13px 12px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .055);
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+#disksTable thead tr:first-child {
+    background: rgba(13, 48, 39, .95);
+}
+
+#disksTable thead tr:first-child th {
+    color: #a6b7b2;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .7px;
+}
+
+#disksTable tbody tr {
+    background: rgba(7, 29, 23, .55);
+
+    transition: background .2s ease;
+}
+
+#disksTable tbody tr:nth-child(even) {
+    background: rgba(11, 40, 32, .55);
+}
+
+#disksTable tbody tr:hover {
+    background: rgba(18, 62, 50, .7);
+}
+
+#disksTable tbody td {
+    color: #d5e0dc;
+}
+
+#disksTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =============================================================
+   FILTROS POR COLUMNA
+============================================================= */
+
+.filters-row {
+    background: rgba(5, 27, 21, .95);
+}
+
+.filters-row th {
+    padding: 8px;
+}
+
+.filters-row input {
+    width: 100%;
+    min-width: 90px;
+
+    padding: 8px;
+
+    border: 1px solid rgba(255, 255, 255, .09);
+    border-radius: 6px;
+
+    background: rgba(2, 13, 10, .65);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 11px;
+
+    outline: none;
+}
+
+.filters-row input::placeholder {
+    color: #708780;
+}
+
+/* =============================================================
+   RESPONSIVE
+============================================================= */
+
+@media (max-width: 750px) {
+    body {
+        padding: 20px 14px 35px;
+    }
+
+    .detail-page-header {
+        align-items: flex-start;
+    }
+
+    .detail-page-heading h1 {
+        font-size: 19px;
+    }
+
+    .disks-section {
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .table-toolbar {
+        justify-content: stretch;
+    }
+
+    #generalSearch {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .detail-page-header {
+        gap: 12px;
+    }
+
+    #closeButton {
+        padding: 8px 10px;
+    }
+}
+
+
+/* =============================================================
+   ESTADOS DE LOS DISCOS
+============================================================= */
+
+/* =============================================================
+   ETIQUETAS DE ESTADO DE LOS DISCOS
+============================================================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(22, 217, 140, 0.3);
+
+    color: var(--green);
+    background: rgba(22, 217, 140, 0.08);
+    box-shadow: 0 0 8px rgba(22, 217, 140, 0.08);
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.status-badge.ok {
+    color: var(--green);
+    border-color: rgba(22, 217, 140, 0.35);
+    background: rgba(22, 217, 140, 0.08);
+    text-shadow: 0 0 8px rgba(22, 217, 140, 0.6);
+}
+
+.status-badge.crítico,
+.status-badge.critico,
+.status-badge.critical {
+    color: var(--red);
+    border-color: rgba(255, 97, 93, 0.4);
+    background: rgba(255, 97, 93, 0.08);
+    text-shadow: 0 0 8px rgba(255, 97, 93, 0.7);
+}
+
+.status-badge.warning,
+.status-badge.advertencia {
+    color: var(--yellow);
+    border-color: rgba(255, 201, 40, 0.4);
+    background: rgba(255, 201, 40, 0.08);
+    text-shadow: 0 0 8px rgba(255, 201, 40, 0.7);
+}
+
+
+.status-badge.desconocido {
+    color: var(--cyan);
+    border-color: rgba(0, 220, 255, 0.4);
+    background: rgba(0, 220, 255, 0.08);
+    text-shadow: 0 0 8px rgba(0, 220, 255, 0.5);
+}

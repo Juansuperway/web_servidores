@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Centro de Monitorización</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <main class="dashboard">
+
+            <!--CONFIGURADOR-->
+
+        <section class="config-bar">
+            
+            <div class="config-box">
+                Conexión:
+                <strong>Warning 90s</strong>
+                · crítico 120s
+            </div>
+
+            <div class="config-box">
+                Memoria:
+                <strong>warning 75%</strong>
+                · crítico 90%
+            </div>
+
+            <div class="config-box">
+                Disco:
+                <strong>Warning 80%</strong>
+                · crítico 90%
+            </div>
+
+            <div class="config-box">
+                Temperatura GPU:
+                <strong>Warning 70ºC</strong>
+                · crítico 77ºC
+            </div>
+
+            <div class="config-box">
+                Alertas tramitadas por operador:
+                <strong>TRAMITADO</strong>
+            </div>
+
+            <div class="config-box">
+                Ocultas globalmente:
+                <strong>CPU</strong>
+            </div>
+
+        </section>
+
+        <!---CABECERA-->
+        <section class="section-header">
+
+            <div class="section-title">
+
+                <h1>Estado por castillo</h1>
+
+                <p>
+                    Selecciona un castillo para consultar sus
+                    indicadores y métricas de monitorización
+                </p>
+
+            </div>
+
+            <!--LEYENDA-->
+
+            <div class="legend">
+
+                <div class="legend-item">
+                    <span class="dot dot-ok"></span>
+                    OK
+                </div>
+
+                <div class="legend-item">
+                    <span class="dot dot-warning"></span>
+                    Warning
+                </div>
+
+                <div class="legend-item">
+                    <span class="dot dot-critical"></span>
+                    Crítico
+                </div>
+            </div>
+
+        </section>
+
+        <!--CONTENEDOR PRINCIPAL
+            IZQUIERDA: MENU ESTACIONES
+            CENTRO: DETALLE CADA ESTACION
+        -->
+        <section class="monitor-layout">
+
+            <!--LISTADO ESTACIONES-->
+
+            <aside class="stations-panel">
+
+                <div class="panel-title">
+                    <span>Castillos</span>
+                    <span
+                        id="stationCount"
+                        class="station-count"
+                    ></span>
+                </div>
+
+                <div
+                    id="stationList"
+                    class="stations-list"
+                ></div>
+
+            </aside>
+
+            <!--DETALLES ESTACIÓN-->
+
+            <section
+                id="stationDetail"
+                class="station-detail"
+            ></section>
+
+        </section>
+    
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
