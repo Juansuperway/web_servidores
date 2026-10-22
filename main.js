@@ -13,7 +13,8 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "2/2",
                 etiqueta: "OK",
-                estado: "ok"
+                estado: "ok",
+                icono: "cable"
             },
 
             {
@@ -28,28 +29,32 @@ const estaciones = [
                 nombre: "MEMORIA",
                 valor: "OK",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "64°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "CÁMARAS",
                 valor: "1",
                 etiqueta: "Incidencia",
-                estado: "critical"
+                estado: "critical",
+                icono: "cctv"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Servicios activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -68,42 +73,48 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "2/2",
                 etiqueta: "OK",
-                estado: "ok"
+                estado: "ok",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "42%",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "58°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "CÁMARAS",
                 valor: "OK",
                 etiqueta: "Activas",
-                estado: "ok"
+                estado: "ok",
+                icono: "cctv"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -122,42 +133,48 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "1/2",
                 etiqueta: "Crítico",
-                estado: "critical"
+                estado: "critical",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "51%",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "61°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "CÁMARAS",
                 valor: "OK",
                 etiqueta: "Activas",
-                estado: "ok"
+                estado: "ok",
+                icono: "cctv"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -176,35 +193,40 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "2/2",
                 etiqueta: "OK",
-                estado: "ok"
+                estado: "ok",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "47%",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "59°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -223,35 +245,40 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "2/2",
                 etiqueta: "OK",
-                estado: "ok"
+                estado: "ok",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "38%",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "57°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "CÁMARAS",
                 valor: "OK",
                 etiqueta: "Activas",
-                estado: "ok"
+                estado: "ok",
+                icono: "cctv"
             }
 
         ]
@@ -270,35 +297,40 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "2/2",
                 etiqueta: "OK",
-                estado: "ok"
+                estado: "ok",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "44%",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "62°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -317,42 +349,48 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "0/2",
                 etiqueta: "Crítico",
-                estado: "critical"
+                estado: "critical",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "68%",
                 etiqueta: "RAM",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "66°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "CÁMARAS",
                 valor: "1",
                 etiqueta: "Incidencia",
-                estado: "critical"
+                estado: "critical",
+                icono: "cctv"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -371,35 +409,40 @@ const estaciones = [
                 nombre: "CONEXIÓN",
                 valor: "95s",
                 etiqueta: "Warning",
-                estado: "warning"
+                estado: "warning",
+                icono: "cable"
             },
 
             {
                 nombre: "DISCOS",
                 valor: "OK",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "database"
             },
 
             {
                 nombre: "MEMORIA",
                 valor: "63%",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "memory-stick"
             },
 
             {
                 nombre: "TEMPERATURA GPU",
                 valor: "69°C",
                 etiqueta: "Normal",
-                estado: "ok"
+                estado: "ok",
+                icono: "thermometer"
             },
 
             {
                 nombre: "SERVICIOS IA",
                 valor: "OK",
                 etiqueta: "Activos",
-                estado: "info"
+                estado: "info",
+                icono: "cpu-ai"
             }
 
         ]
@@ -428,19 +471,33 @@ function crearIconoTren() {
 
 /* ICONO MÉTRICA */
 
+
+
 function crearIconoMetrica(icono) {
 
-    if (icono === "database") {
+    const iconos = {
+        "cable": "cable",
+        "database": "database",
+        "memory-stick": "memory-stick",
+        "thermometer": "thermometer",
+        "cctv": "cctv",
+        "cpu-ai": "cpu-ai"
+    };
 
-        return `
-            <div class="metric-icon">
-                <span class="database-icon"></span>
-            </div>
-        `;
+    const nombreIcono = iconos[icono];
+
+    if (!nombreIcono) {
+        return "";
     }
 
-    return "";
+    return `
+        <div class="metric-icon">
+            <i data-lucide="${nombreIcono}"></i>
+        </div>
+    `;
 }
+
+
 
 /* CREAR ITEM DE ESTACION */
 
@@ -622,6 +679,8 @@ function renderizarDetalle(estacion) {
 
     stationDetail.appendChild(metricsGrid);
 
+    lucide.createIcons();
+
 }
 
 /* NOMBRE DEL ESTADO */
@@ -703,3 +762,23 @@ document.addEventListener(
     "DOMContentLoaded",
     renderizarEstaciones
 );
+
+function actualizarFecha() {
+    const elementoFecha = document.getElementById("ultima-actualizacion");
+
+    if (!elementoFecha) return;
+
+    const ahora = new Date();
+
+    elementoFecha.textContent = ahora.toLocaleString("es-ES", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+}
+
+actualizarFecha();
+
