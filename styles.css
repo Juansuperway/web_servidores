@@ -76,10 +76,14 @@ body {
         70px;
 }
 
+
+
 /* CABECERA Y ESTADO DE MONITORIZACIÓN */
+
 
 .page-header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
@@ -87,7 +91,11 @@ body {
 }
 
 .page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 1;
+    min-width: 0;
 }
 
 .page-title h1 {
@@ -106,22 +114,51 @@ body {
     flex-direction: column;
     align-items: flex-end;
     gap: 6px;
+    flex-shrink: 0;
+    
+}
+
+.status-box{
+    padding:
+        9px
+        13px;
+
+    border-radius: 20px;
+
+    color: #92a9a2;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    background:
+        rgba(20, 55, 46, .72);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, .06);
 }
 
 .monitor-status p {
     margin: 0;
     color: #92a9a2;
     font-size: 12px;
+    text-align: right;
+    
 }
 
 .status-dot {
+    display: inline-block;
     width: 8px;
     height: 8px;
+    min-width: 8px;
     border-radius: 50%;
-    background: #22c55e;
+    background-color: #22c55e;
     box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
     flex-shrink: 0;
+    margin: 0 5px 0 2px
 }
+
 /*CONFIGURACION*/
 
 .config-bar {
@@ -1360,3 +1397,4 @@ body {
         align-self: flex-start;
     }
 }
+
