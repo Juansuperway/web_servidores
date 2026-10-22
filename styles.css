@@ -76,22 +76,53 @@ body {
         70px;
 }
 
-/*CONFIGURACION*/
+/* CABECERA Y ESTADO DE MONITORIZACIÓN */
 
 .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
     margin-bottom: 20px;
 }
 
-.page-header h1 {
+.page-title {
+    flex: 1;
+}
+
+.page-title h1 {
     font-size: 30px;
     margin: 0 0 4px 0;
 }
 
-.page-header p {
+.page-title p {
     margin: 0;
     color: #92a9a2;
     font-size: 12px;
 }
+
+.monitor-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.monitor-status p {
+    margin: 0;
+    color: #92a9a2;
+    font-size: 12px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+    flex-shrink: 0;
+}
+/*CONFIGURACION*/
 
 .config-bar {
 
