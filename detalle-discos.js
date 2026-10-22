@@ -15,7 +15,7 @@ document.getElementById("stationName").textContent =
 const closeButton = document.getElementById("closeButton");
 
 closeButton.addEventListener("click", () => {
-    window.close();
+    window.history.back();
 });
 
 
