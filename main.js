@@ -537,7 +537,7 @@ function crearMetrica(metrica) {
         const nombreMetrica = metrica.nombre.toUpperCase();
         const url = `detalle-discos.html?estacion=${encodeURIComponent(estacion)}&metrica=${encodeURIComponent(nombreMetrica)}`;
 
-        window.open(url, "_blank");
+        window.location.href = url;
     });
 }
     return elemento
