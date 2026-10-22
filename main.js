@@ -465,7 +465,7 @@ const stationCount =
 function crearIconoTren() {
 
     return `
-        <span class="train-icon"></span>
+        <i data-lucide="server"></i>
         `;
 }
 
